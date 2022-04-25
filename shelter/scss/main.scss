@@ -222,10 +222,16 @@ section {
   .section-heading {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 3.75rem;
+  }
+}
+
+.pets {
+  position: relative;
+  .section-heading {
+    margin-bottom: 45px;
 
     @include mediaQuery($mobile) {
-      margin-bottom: 2.625rem;
+      margin-bottom: 27px;
     }
   }
 }
@@ -235,48 +241,125 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 45px;
 
   @include mediaQuery($mobile) {
-    margin: 0 auto 2.625rem;
-    max-width: 270px;
+    max-width: 300px;
+    margin: 0 auto 42px;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 5rem;
   }
 }
 
-.slider-cards {
-  max-width: 61.875rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-grow: 1;
+.slider-frame {
+  width: 1020px;
+  height: 465px;
+  padding: 15px;
+  overflow: hidden;
 
   @include mediaQuery($tablet) {
-    justify-content: center;
-    column-gap: 2.5rem;
+    width: 604px;
+    padding: 15px 12px;
   }
 
   @include mediaQuery($mobile) {
+    width: 300px;
+    padding: 15px;
     order: -1;
-    margin-bottom: 1.25rem;
   }
 }
 
-.card {
-  &:nth-child(3) {
-    @include mediaQuery($tablet) {
-      display: none;
-    }
+.slider-cards {
+  width: 2790px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+  transition: 0s;
+  left: -1080px;
+
+  @include mediaQuery($tablet) {
+    width: 2440px;
+    left: -620px;
   }
 
-  &:not(:first-child) {
-    @include mediaQuery($mobile) {
-      display: none;
+  @include mediaQuery($mobile) {
+    left: -310px;
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+
+@include mediaQuery($tablet) {
+  @keyframes move-right {
+    from {
+      left: -620px;
+    }
+    to {
+      left: -1240px;
     }
   }
+}
+
+@include mediaQuery($mobile) {
+  @keyframes move-right {
+    from {
+      left: -310px;
+    }
+    to {
+      left: -620px;
+    }
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 0.5s;
+}
+
+@keyframes move-left {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@include mediaQuery($tablet) {
+  @keyframes move-left {
+    from {
+      left: -620px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+
+@include mediaQuery($mobile) {
+  @keyframes move-left {
+    from {
+      left: -310px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 0.5s;
 }
 
 .pet-name,
@@ -295,6 +378,11 @@ section {
 .help {
   .section-heading {
     max-height: 5.625rem;
+    margin-bottom: 3.75rem;
+
+    @include mediaQuery($mobile) {
+      margin-bottom: 2.625rem;
+    }
   }
 }
 

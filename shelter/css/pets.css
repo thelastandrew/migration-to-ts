@@ -540,10 +540,6 @@ header .wrapper {
   visibility: visible;
 }
 
-.popup-body {
-  position: relative;
-}
-
 .popup-close {
   width: 52px;
   height: 52px;
@@ -595,6 +591,7 @@ header .wrapper {
   display: flex;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  position: relative;
 }
 
 @media (max-width: 1279px) {
@@ -725,11 +722,7 @@ header .wrapper {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
 }
 
 .header .wrapper {
@@ -768,8 +761,7 @@ header .wrapper {
 }
 
 .pets .wrapper {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
+  padding: 5rem 25px 6.25rem;
 }
 
 @media (max-width: 1279px) {
@@ -780,13 +772,8 @@ header .wrapper {
 
 @media (max-width: 767px) {
   .pets .wrapper {
-    padding-top: 2.625rem;
-    padding-bottom: 2.625rem;
+    padding: 2.625rem 10px;
   }
-}
-
-.main {
-  margin-top: 7.5rem;
 }
 
 .section-heading {
@@ -823,37 +810,47 @@ header .wrapper {
   margin: 0 auto;
 }
 
-.slider-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px 40px;
-  padding: 15px 0;
+.slider-frame {
+  overflow: hidden;
+  padding: 15px;
   margin-bottom: 45px;
 }
 
 @media (max-width: 1279px) {
-  .slider-cards {
-    padding: 0;
-    margin-bottom: 40px;
-  }
-  .slider-cards .card:nth-last-child(-n + 2) {
-    display: none;
+  .slider-frame {
+    max-width: 610px;
+    height: 1395px;
+    margin: 0 auto 40px;
   }
 }
 
 @media (max-width: 767px) {
-  .slider-cards .card:nth-child(n + 4) {
-    display: none;
+  .slider-frame {
+    max-width: 300px;
+  }
+}
+
+.slider-cards {
+  width: 7400px;
+  height: 930px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 40px;
+  position: relative;
+  left: 0px;
+}
+
+@media (max-width: 1279px) {
+  .slider-cards {
+    width: 4920px;
+    height: 1395px;
   }
 }
 

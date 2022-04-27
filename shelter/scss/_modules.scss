@@ -419,7 +419,8 @@ header {
   justify-content: center;
   align-items: center;
 
-  &:hover {
+  &:hover,
+  &.hovered {
     background-color: $color-primary;
   }
 }

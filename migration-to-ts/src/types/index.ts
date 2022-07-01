@@ -14,3 +14,18 @@ export type Article = {
   publishedAt: string;
   content: string;
 };
+
+export interface SrcResp {
+  status: string;
+  sources: Array<Source>;
+}
+
+export type Source = {
+  id: string;
+  name: string;
+  description: string;
+  url: string;
+  category: string;
+  language: string;
+  country: string;
+};

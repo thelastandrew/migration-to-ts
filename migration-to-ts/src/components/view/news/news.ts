@@ -1,9 +1,8 @@
 import './news.css';
-import { Response } from '../../../types';
-import { Article } from '../../../types';
+import { DataResp, Article } from '../../../types';
 
 class News {
-  draw(data: Response['articles']) {
+  draw(data: DataResp['articles']) {
     const news: Article[] = data.length >= 10 ? data.filter((_item, idx: number) => idx < 10) : data;
 
     const fragment: DocumentFragment = document.createDocumentFragment();

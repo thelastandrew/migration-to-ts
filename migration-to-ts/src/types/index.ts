@@ -1,5 +1,5 @@
-export interface Response {
-  status: string;
+export interface DataResp {
+  status: Status;
   totalResults: number;
   articles: Array<Article>;
 }
@@ -16,7 +16,7 @@ export type Article = {
 };
 
 export interface SrcResp {
-  status: string;
+  status: Status;
   sources: Array<Source>;
 }
 
@@ -29,3 +29,22 @@ export type Source = {
   language: string;
   country: string;
 };
+
+enum Status {
+  OK = 'ok',
+  ERROR = 'error',
+}
+
+export type GetResp = {
+  endpoint: Endpoint;
+  options?: { sources?: string };
+};
+
+enum Endpoint {
+  SOURCES = 'sources',
+  EVERYTHING = 'everything',
+}
+
+export interface Options {
+  [key: string]: string;
+}

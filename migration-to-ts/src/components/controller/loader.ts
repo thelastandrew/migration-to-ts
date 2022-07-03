@@ -36,14 +36,14 @@ class Loader {
   load(
     method: string,
     endpoint: GetResp['endpoint'],
-    callback: { (): void; (arg0: unknown): unknown },
+    callback: (data: JSON) => void,
     options: GetResp['options'] = {}
   ) {
     fetch(this.makeUrl(options, endpoint), { method })
       .then(this.errorHandler)
       .then((res) => res.json())
-      .then((data) => callback(data))
-      .catch((err) => console.error(err));
+      .then((data: JSON) => callback(data))
+      .catch((err: Error) => console.error(err));
   }
 }
 

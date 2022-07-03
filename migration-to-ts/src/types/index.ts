@@ -40,7 +40,7 @@ export type GetResp = {
   options?: { sources?: string };
 };
 
-enum Endpoint {
+export enum Endpoint {
   SOURCES = 'sources',
   EVERYTHING = 'everything',
 }
@@ -48,3 +48,5 @@ enum Endpoint {
 export interface Options {
   [key: string]: string;
 }
+
+export type CallbackType<T> = (data?: T) => void;

@@ -1,8 +1,8 @@
 import './sources.css';
-import { SrcResp, Source } from '../../../types';
+import { ISrcResp, Source } from '../../../types';
 
 class Sources {
-  draw(data: SrcResp['sources']) {
+  draw(data: ISrcResp['sources']) {
     const fragment: DocumentFragment = document.createDocumentFragment();
     const sourceItemTemp = document.querySelector('#sourceItemTemp') as HTMLTemplateElement;
 

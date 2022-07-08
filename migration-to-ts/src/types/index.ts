@@ -1,4 +1,4 @@
-export interface DataResp {
+export interface IDataResp {
   status: Status;
   totalResults: number;
   articles: Array<Article>;
@@ -15,7 +15,7 @@ export type Article = {
   content: string;
 };
 
-export interface SrcResp {
+export interface ISrcResp {
   status: Status;
   sources: Array<Source>;
 }
@@ -45,7 +45,7 @@ export enum Endpoint {
   EVERYTHING = 'everything',
 }
 
-export interface Options {
+export interface IOptions {
   [key: string]: string;
 }
 

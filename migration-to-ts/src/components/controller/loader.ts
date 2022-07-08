@@ -1,4 +1,4 @@
-import { GetResp, Options } from '../../types';
+import { GetResp, IOptions } from '../../types';
 
 class Loader {
   constructor(public baseLink: string, public options: { [apiKey: string]: string }) {}
@@ -22,7 +22,7 @@ class Loader {
     return res;
   }
 
-  makeUrl(options: Options, endpoint: string): string {
+  makeUrl(options: IOptions, endpoint: string): string {
     const urlOptions = { ...this.options, ...options };
     let url = `${this.baseLink}${endpoint}?`;
 

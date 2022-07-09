@@ -2,7 +2,7 @@ import News from './news/news';
 import Sources from './sources/sources';
 import { IDataResp, ISrcResp } from '../../types';
 
-export class AppView {
+class AppView {
     news: News;
     sources: Sources;
 

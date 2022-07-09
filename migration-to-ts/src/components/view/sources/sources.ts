@@ -1,5 +1,6 @@
 import './sources.css';
-import { ISrcResp, Source } from '../../../types';
+import { ISrcResp } from '../../../types';
+import type { Source } from '../../../types';
 
 class Sources {
     draw(data: ISrcResp['sources']) {

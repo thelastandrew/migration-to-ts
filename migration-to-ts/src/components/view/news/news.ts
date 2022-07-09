@@ -1,5 +1,6 @@
 import './news.css';
-import { IDataResp, Article } from '../../../types';
+import { IDataResp } from '../../../types';
+import type { Article } from '../../../types';
 
 class News {
     draw(data: IDataResp['articles']) {

@@ -1,4 +1,5 @@
-import { GetResp, IOptions } from '../../types';
+import { IOptions } from '../../types';
+import type { GetResp } from '../../types';
 
 class Loader {
     constructor(public baseLink: string, public options: { [apiKey: string]: string }) {}

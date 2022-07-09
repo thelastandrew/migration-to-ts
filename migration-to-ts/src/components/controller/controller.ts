@@ -1,5 +1,6 @@
 import AppLoader from './appLoader';
-import { Endpoint, CallbackType, IDataResp, ISrcResp } from '../../types';
+import { Endpoint, IDataResp, ISrcResp } from '../../types';
+import type { CallbackType } from '../../types';
 
 class AppController extends AppLoader {
     getSources(callback: CallbackType<ISrcResp>) {

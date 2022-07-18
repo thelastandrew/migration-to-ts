@@ -1,0 +1,212 @@
+[
+  {
+    "artist": "Limp Bizkit",
+    "album": "Three Dollar Bill, Yall",
+    "year": 1997,
+    "genre": ["nu metal", "rap metal", "rapcore"],
+    "label": ["Flip Records", "Interscope Records"],
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a4/Limp_Bizkit_Three_Dollar_Bill_Y%27All.jpg",
+    "format": "cassette",
+    "price": 7,
+    "favorite": false
+  },
+  {
+    "artist": "Limp Bizkit",
+    "album": "Significant Other",
+    "year": 1999,
+    "genre": ["nu metal", "rap metal"],
+    "label": ["Flip Records", "Interscope Records"],
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b8/Limp_Bizkit_Significant_Other.jpg",
+    "format": "CD",
+    "price": 12,
+    "favorite": true
+  },
+  {
+    "artist": "Limp Bizkit",
+    "album": "Chocolate Starfish and the Hot Dog Flavored Water",
+    "year": 2000,
+    "genre": ["nu metal", "rap metal"],
+    "label": ["Flip Records", "Interscope Records"],
+    "cover": "https://upload.wikimedia.org/wikipedia/en/3/38/Limp_Bizkit_Chocolate_Starfish_and_the_Hotdog_Flavored_Water.jpg",
+    "format": "CD",
+    "price": 15,
+    "favorite": true
+  },
+  {
+    "artist": "Nirvana",
+    "album": "Bleach",
+    "year": 1989,
+    "genre": ["grunge", "punk rock"],
+    "label": "Sub Pop",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/a1/Nirvana-Bleach.jpg",
+    "format": "LP 12\"",
+    "price": 20,
+    "favorite": false
+  },
+  {
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "year": 1991,
+    "genre": ["grunge", "alternative rock"],
+    "label": "DGC",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg",
+    "format": "LP 12\"",
+    "price": 40,
+    "favorite": true
+  },
+  {
+    "artist": "Nirvana",
+    "album": "In Utero",
+    "year": 1993,
+    "genre": ["grunge", "alternative rock", "punk rock", "noise rock"],
+    "label": "DGC",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/e/e5/In_Utero_%28Nirvana%29_album_cover.jpg",
+    "format": "LP 12\"",
+    "price": 30,
+    "favorite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "album": "Daydream Nation",
+    "year": 1988,
+    "genre": ["alternative rock", "indie rock", "art punk"],
+    "label": "DGC",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/a/ad/Daydreamnation.png",
+    "format": "CD",
+    "price": 15,
+    "favorite": false
+  },
+  {
+    "artist": "Sonic Youth",
+    "album": "Goo",
+    "year": 1990,
+    "genre": ["alternative rock"],
+    "label": "DGC",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/b2/Sonicyouthgoo.png",
+    "format": "LP 12\"",
+    "price": 30,
+    "favorite": true
+  },
+  {
+    "artist": "Sonic Youth",
+    "album": "Dirty",
+    "year": 1992,
+    "genre": ["alternative rock", "noise rock", "grunge"],
+    "label": "DGC",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/cb/Sonicyouthdirty.png",
+    "format": "cassette",
+    "price": 20,
+    "favorite": false
+  },
+  {
+    "artist": "Fugazi",
+    "album": "Repeater",
+    "year": 1990,
+    "genre": ["post-hardcore", "garage rock"],
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/80/Fugazi_-_Repeater_cover.jpg",
+    "format": "LP 12\"",
+    "price": 20,
+    "favorite": true
+  },
+  {
+    "artist": "Fugazi",
+    "album": "Steady Diet of Nothing",
+    "year": 1991,
+    "genre": "post-hardcore",
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/d/d5/Fugazi_-_Steady_Diet_of_Nothing_cover.jpg",
+    "format":  "cassette",
+    "price": 12,
+    "favorite": false
+  },
+  {
+    "artist": "Fugazi",
+    "album": "In on the Kill Taker",
+    "year": 1993,
+    "genre": "post-hardcore",
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/f/f1/Fugazi_-_In_on_the_Kill_Taker_cover.jpg",
+    "format": "LP 12\"",
+    "price": 20,
+    "favorite": false
+  },
+  {
+    "artist": "Fugazi",
+    "album": "Red Medicine",
+    "year": 1995,
+    "genre": ["post-hardcore", "alternative rock"],
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/0e/Fugazi_-_Red_Medicine_cover.jpg",
+    "format": "LP 12\"",
+    "price": 20,
+    "favorite": false
+  },
+  {
+    "artist": "Fugazi",
+    "album": "End Hits",
+    "year": 1998,
+    "genre": ["post-hardcore", "alternative rock", "noise rock", "experimental rock"],
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/b/bd/Fugazi_-_End_Hits_cover.jpg",
+    "format": "CD",
+    "price": 15,
+    "favorite": false
+  },
+  {
+    "artist": "Fugazi",
+    "album": "The Argument",
+    "year": 2001,
+    "genre": ["post-hardcore", "alternative rock", "indie rock"],
+    "label": "Dischord",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/9a/Fugazi_-_The_Argument_cover.jpg",
+    "format": "LP 12\"",
+    "price": 20,
+    "favorite": true
+  },
+  {
+    "artist": "Eeva",
+    "album": "Ива",
+    "year": 2010,
+    "genre": ["emo", "screamo"],
+    "label": "Self-released",
+    "cover": "https://i.discogs.com/Uclc3iupynCHUBRfvLdtpO3xIwJfpupT66XYrdidG_Q/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzOTMz/MjgtMTUxODg4MDQ5/Ny00Mzk5LmpwZWc.jpeg",
+    "format": "CD",
+    "price": 10,
+    "favorite": false
+  },
+  {
+    "artist": "Eeva",
+    "album": "7\"",
+    "year": 2011,
+    "genre": ["emo", "math rock", "post-hardcore"],
+    "label": "Self-released",
+    "cover": "https://f4.bcbits.com/img/a3847739177_16.jpg",
+    "format": "EP 7\"",
+    "price": 10,
+    "favorite": false
+  },
+  {
+    "artist": "Eeva",
+    "album": "Bypass",
+    "year": 2014,
+    "genre": ["post-hardcore", "punk rock", "noise rock"],
+    "label": ["Sad Records", "TRVS Records", "Hidden Rainbows"],
+    "cover": "https://f4.bcbits.com/img/a1437389190_16.jpg",
+    "format": "LP 12\"",
+    "price": 15,
+    "favorite": true
+  },
+  {
+    "artist": "Eeva",
+    "album": "Шоссейный синдром",
+    "year": 2017,
+    "genre": ["post-hardcore", "alternative rock", "punk rock"],
+    "label": "Издательство Сияние",
+    "cover": "https://f4.bcbits.com/img/a3939877752_16.jpg",
+    "format": "cassette",
+    "price": 10,
+    "favorite": false
+  }
+
+]
